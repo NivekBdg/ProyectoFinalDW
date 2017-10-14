@@ -70,6 +70,11 @@
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="frmBebidas.aspx" />
+    <Content Include="frmHabitacion.aspx" />
+    <Content Include="frmHotel.aspx" />
+    <Content Include="frmReservar.aspx" />
+    <Content Include="frmUsuario.aspx" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\npm.js" />
@@ -94,6 +99,41 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmBebidas.aspx.cs">
+      <DependentUpon>frmBebidas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmBebidas.aspx.designer.cs">
+      <DependentUpon>frmBebidas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmHabitacion.aspx.cs">
+      <DependentUpon>frmHabitacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmHabitacion.aspx.designer.cs">
+      <DependentUpon>frmHabitacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmHotel.aspx.cs">
+      <DependentUpon>frmHotel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmHotel.aspx.designer.cs">
+      <DependentUpon>frmHotel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmReservar.aspx.cs">
+      <DependentUpon>frmReservar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmReservar.aspx.designer.cs">
+      <DependentUpon>frmReservar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsuario.aspx.cs">
+      <DependentUpon>frmUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmUsuario.aspx.designer.cs">
+      <DependentUpon>frmUsuario.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -102,6 +142,9 @@
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="code_data\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
