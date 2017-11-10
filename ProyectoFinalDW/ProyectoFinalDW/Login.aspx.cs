@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoFinalDW.code_data.controller;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,32 @@ namespace ProyectoFinalDW
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            
 
+            
+        }
+
+        protected void btnLogin_Click(object sender, EventArgs e)
+        {
+            code_data.objetos.objUsuario objUsuario = new code_data.objetos.objUsuario()
+            {
+                strUser = txtUser.Text,
+                strPass = txtPass.Text,
+            };
+
+            ctrlHotel objHotel = new ctrlHotel();
+            bool resultado = objHotel.ConsultarUsuario(objUsuario);
+
+            if(resultado == true)
+            {
+                Session["usuario"] = txtUser.Text;
+                Response.Redirect("frmHabitacion.aspx");
+            }
+            else
+            {
+                lblError.Text = objHotel.strMensaje;
+                dvError.Visible = true;
+            }
         }
     }
 }

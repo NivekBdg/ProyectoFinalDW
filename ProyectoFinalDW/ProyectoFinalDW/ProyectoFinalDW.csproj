@@ -47,6 +47,7 @@
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=6.10.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -70,11 +71,21 @@
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="frmAdminUsuarios.aspx" />
     <Content Include="frmBebidas.aspx" />
     <Content Include="frmHabitacion.aspx" />
     <Content Include="frmHotel.aspx" />
+    <Content Include="frmMenuPrincipal.aspx" />
     <Content Include="frmReservar.aspx" />
     <Content Include="frmUsuario.aspx" />
+    <Content Include="Imagenes\129042-simple-red-square-icon-food-beverage-drink-glass2.png" />
+    <Content Include="Imagenes\add.png" />
+    <Content Include="Imagenes\bebida2.png" />
+    <Content Include="Imagenes\btn-reserva.png" />
+    <Content Include="Imagenes\exit.png" />
+    <Content Include="Imagenes\hotel.png" />
+    <Content Include="Imagenes\icono-habitación.png" />
+    <Content Include="Imagenes\Iynque-Ios7-Style-Users.ico" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\npm.js" />
@@ -99,6 +110,17 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="code_data\controller\clsConexion.cs" />
+    <Compile Include="code_data\controller\ctrlHotel.cs" />
+    <Compile Include="code_data\dao\daoHotel.cs" />
+    <Compile Include="code_data\objetos\objUsuario.cs" />
+    <Compile Include="frmAdminUsuarios.aspx.cs">
+      <DependentUpon>frmAdminUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAdminUsuarios.aspx.designer.cs">
+      <DependentUpon>frmAdminUsuarios.aspx</DependentUpon>
+    </Compile>
     <Compile Include="frmBebidas.aspx.cs">
       <DependentUpon>frmBebidas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -119,6 +141,13 @@
     </Compile>
     <Compile Include="frmHotel.aspx.designer.cs">
       <DependentUpon>frmHotel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuPrincipal.aspx.cs">
+      <DependentUpon>frmMenuPrincipal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmMenuPrincipal.aspx.designer.cs">
+      <DependentUpon>frmMenuPrincipal.aspx</DependentUpon>
     </Compile>
     <Compile Include="frmReservar.aspx.cs">
       <DependentUpon>frmReservar.aspx</DependentUpon>
@@ -143,9 +172,7 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="code_data\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -25,8 +25,11 @@
                 </div>
             </div>
             <div class="col-md-12 modal-footer">
-                <asp:Button runat="server" ID="btnLogin" Text="Login" CssClass="btn btn-success" />
+                <asp:Button runat="server" ID="btnLogin" Text="Login" CssClass="btn btn-success" OnClick="btnLogin_Click" />
             </div>
+        </div>
+        <div class="alert alert-danger col-md-12" runat="server" id="dvError" visible="false">
+            <strong>Error:</strong> Usuario/Contraseña Incorrecto. <asp:Label runat="server" ID="lblError"></asp:Label>
         </div>
     </form>
 </body>

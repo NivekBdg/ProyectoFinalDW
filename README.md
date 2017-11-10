@@ -1,3 +1,0 @@
-# ProyectoFinalDW
-hotel app 
-test

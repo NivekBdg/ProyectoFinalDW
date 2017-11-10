@@ -68,7 +68,7 @@
         </div>
         <div class="col-md-12 modal-body">
             <div class="col-md-4 col-md-offset-5">
-                <asp:Button runat="server" ID="btnGuardar" Text="Guardar" CssClass="btn btn-success" />
+                <asp:Button runat="server" ID="btnGuardar" Text="Guardar" CssClass="btn btn-success" OnClick="btnGuardar_Click" />
             </div>
         </div>
     </form>
