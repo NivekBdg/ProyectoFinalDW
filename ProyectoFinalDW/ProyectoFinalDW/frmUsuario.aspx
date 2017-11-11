@@ -22,7 +22,7 @@
                     <asp:Label runat="server" Text="Nombre de Usuario: "></asp:Label>
                 </div>
                 <div class="col-md-3">
-                    <asp:TextBox runat="server" ID="txtNombreUsuario" CssClass="form-control"></asp:TextBox>
+                    <asp:TextBox runat="server" ID="txtNombreUsuario" CssClass="form-control" ></asp:TextBox>
                 </div>
             </div>
             <div class="col-md-12 modal-body">
@@ -65,11 +65,33 @@
                     <asp:TextBox runat="server" ID="txtDireccion" CssClass="form-control"></asp:TextBox>
                 </div>
             </div>
+            <div class="col-md-12 modal-body">
+                <div class="col-md-3">
+                    <asp:Label runat="server" Text="Identificación: "></asp:Label>
+                </div>
+                <div class="col-md-3">
+                    <asp:TextBox runat="server" ID="txtId" CssClass="form-control"></asp:TextBox>
+                </div>
+            </div>
+            <div class="col-md-12 modal-body">
+                <div class="col-md-3">
+                    <asp:Label runat="server" Text="Teléfono: "></asp:Label>
+                </div>
+                <div class="col-md-3">
+                    <asp:TextBox runat="server" ID="txtTelefono" TextMode="Number" CssClass="form-control"></asp:TextBox>
+                </div>
+            </div>
         </div>
         <div class="col-md-12 modal-body">
             <div class="col-md-4 col-md-offset-5">
                 <asp:Button runat="server" ID="btnGuardar" Text="Guardar" CssClass="btn btn-success" OnClick="btnGuardar_Click" />
             </div>
+        </div>
+        <div class="alert alert-success col-md-12" runat="server" id="dvCorrecto" visible="false">
+            <strong>Error:</strong> Usuario Ingresado correctamente 
+        </div>
+        <div class="alert alert-danger col-md-12" runat="server" id="dvError" visible="false">
+            <strong>Error:</strong><asp:Label runat="server" ID="lblError"></asp:Label>
         </div>
     </form>
 </body>

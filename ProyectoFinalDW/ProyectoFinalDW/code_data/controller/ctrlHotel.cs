@@ -20,5 +20,16 @@ namespace ProyectoFinalDW.code_data.controller
 
             return true;
         }
+
+        public bool insertarUsuario(objetos.objNuevoUsuario Usuario)
+        {
+            if(!objHotel.InsertarUsuario(Usuario))
+            {
+                strMensaje = objHotel.strMensajeError;
+                return false;
+            }
+
+            return true;
+        }
     }
 }

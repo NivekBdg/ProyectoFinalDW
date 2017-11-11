@@ -45,12 +45,14 @@ namespace ProyectoFinalDW.code_data.dao
            
         }
 
-        public bool InsertarUsuario(objUsuario Usuario)
+        public bool InsertarUsuario(objNuevoUsuario Usuario)
         {
             MySql.Data.MySqlClient.MySqlConnection dbConn = new MySql.Data.MySqlClient.MySqlConnection("Persist Security Info=False;server=localhost;database=hotel_bd;uid=conexion;password=pruebas1.");
             bool idnumber = false;
             MySqlCommand cmd = dbConn.CreateCommand();
-            cmd.CommandText = "INSERT INTO usuario(username, password, email, dni, nombre, apellidos, direccion, tlf, enabled)  VALUES('" + Usuario.strUser + "', '" + Usuario.strPass + "', 'test', 1234, 'Rick', 'Bol', 'Z5', 123456, 1)";
+            cmd.CommandText = @" INSERT INTO usuario(username, password, email, dni, nombre, apellidos, direccion, tlf, enabled)  
+                                VALUES('" + Usuario.strUser + "', '" + Usuario.strPass + "', '" + Usuario.strCorreo + "', " + Usuario.int64Dni + "," +
+                                " '" + Usuario.strNombre + "', '" + Usuario.strApellidos + "', '" + Usuario.strDireccion + "', " + Usuario.strTelefono + ", 1)";
 
             try
             {
@@ -58,6 +60,7 @@ namespace ProyectoFinalDW.code_data.dao
             }
             catch (Exception erro)
             {
+                strMensajeError = erro.Message;
                 dbConn.Close();
             }
             try
@@ -66,6 +69,7 @@ namespace ProyectoFinalDW.code_data.dao
             }
             catch(Exception e)
             {
+                strMensajeError = e.Message;
                 return false;
             }
             return idnumber;
