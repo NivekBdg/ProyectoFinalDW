@@ -102,5 +102,29 @@ namespace ProyectoFinalDW.code_data.controller
 
             return true;
         }
+        
+       
+
+        public bool insertarBebida(objetos.)
+        {
+            if(!objHotel.InsertarBebida(Bebida))
+            {
+                strMensaje = objHotel.strMensajeError;
+                return false;
+            }
+
+            return true;
+        }
+
+         public bool ConsultarBebida(objetos.objBebida Usuario)
+        {
+            if(!objHotel.SeleccionarBebida(Bebida))
+            {
+                strMensaje = objHotel.strMensajeError;
+                return false;
+            }
+
+            return true;
+        }
     }
 }
