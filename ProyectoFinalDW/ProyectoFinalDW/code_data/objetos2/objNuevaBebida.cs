@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace ProyectoFinalDW.code_data.objetos
+namespace ProyectoFinalDW.code_data.objetos2
 {
     public class objNuevaBebida
     {
