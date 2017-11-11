@@ -10,8 +10,8 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div class="col-md-12 text-center modal-body">
-            <asp:Label runat="server" Text="Mantenimiento a Usuarios"></asp:Label>
+        <div class="col-md-12 text-center modal-body bg-primary">
+            <asp:ImageButton runat="server" ImageUrl="Imagenes/back.png" Width="50px" Height="50px" ID="btnBack" OnClick="btnBack_Click"/><h1><asp:Label runat="server" Text="Mantenimiento a Usuarios"></asp:Label></h1>
         </div>
         <div class="col-md-12 table-bordered">
             <div class="col-md-12 text-center modal-body">
@@ -23,6 +23,7 @@
                 </div>
                 <div class="col-md-3">
                     <asp:TextBox runat="server" ID="txtNombreUsuario" CssClass="form-control" ></asp:TextBox>
+                    <asp:Label Text="*" ForeColor="Red" Visible ="false" runat="server" ID="lblError1"></asp:Label>
                 </div>
             </div>
             <div class="col-md-12 modal-body">
@@ -31,6 +32,7 @@
                 </div>
                 <div class="col-md-3">
                     <asp:TextBox runat="server" ID="TxtPass" TextMode="Password" CssClass="form-control"></asp:TextBox>
+                    <asp:Label Text="*" ForeColor="Red" Visible ="false" runat="server" ID="lblError2"></asp:Label>
                 </div>
             </div>
             <div class="col-md-12 modal-body">
@@ -47,6 +49,7 @@
                 </div>
                 <div class="col-md-3">
                     <asp:TextBox runat="server" ID="txtNombre" CssClass="form-control"></asp:TextBox>
+                    <asp:Label Text="*" ForeColor="Red" Visible ="false" runat="server" ID="lblError3"></asp:Label>
                 </div>
             </div>
             <div class="col-md-12 modal-body">
@@ -55,6 +58,7 @@
                 </div>
                 <div class="col-md-3">
                     <asp:TextBox runat="server" ID="txtApellidos" CssClass="form-control"></asp:TextBox>
+                    <asp:Label Text="*" ForeColor="Red" Visible ="false" runat="server" ID="lblError4"></asp:Label>
                 </div>
             </div>
             <div class="col-md-12 modal-body">
@@ -71,6 +75,7 @@
                 </div>
                 <div class="col-md-3">
                     <asp:TextBox runat="server" ID="txtId" CssClass="form-control"></asp:TextBox>
+                    <asp:Label Text="*" ForeColor="Red" Visible ="false" runat="server" ID="lblError5"></asp:Label>
                 </div>
             </div>
             <div class="col-md-12 modal-body">

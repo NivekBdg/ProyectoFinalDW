@@ -22,6 +22,15 @@ namespace ProyectoFinalDW {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// btnBack control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton btnBack;
+        
+        /// <summary>
         /// txtNombreUsuario control.
         /// </summary>
         /// <remarks>
@@ -31,6 +40,15 @@ namespace ProyectoFinalDW {
         protected global::System.Web.UI.WebControls.TextBox txtNombreUsuario;
         
         /// <summary>
+        /// lblError1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblError1;
+        
+        /// <summary>
         /// TxtPass control.
         /// </summary>
         /// <remarks>
@@ -38,6 +56,15 @@ namespace ProyectoFinalDW {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TxtPass;
+        
+        /// <summary>
+        /// lblError2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblError2;
         
         /// <summary>
         /// txtEmail control.
@@ -58,6 +85,15 @@ namespace ProyectoFinalDW {
         protected global::System.Web.UI.WebControls.TextBox txtNombre;
         
         /// <summary>
+        /// lblError3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblError3;
+        
+        /// <summary>
         /// txtApellidos control.
         /// </summary>
         /// <remarks>
@@ -65,6 +101,15 @@ namespace ProyectoFinalDW {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtApellidos;
+        
+        /// <summary>
+        /// lblError4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblError4;
         
         /// <summary>
         /// txtDireccion control.
@@ -83,6 +128,15 @@ namespace ProyectoFinalDW {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtId;
+        
+        /// <summary>
+        /// lblError5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblError5;
         
         /// <summary>
         /// txtTelefono control.

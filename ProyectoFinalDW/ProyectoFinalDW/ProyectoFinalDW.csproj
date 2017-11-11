@@ -80,6 +80,7 @@
     <Content Include="frmUsuario.aspx" />
     <Content Include="Imagenes\129042-simple-red-square-icon-food-beverage-drink-glass2.png" />
     <Content Include="Imagenes\add.png" />
+    <Content Include="Imagenes\back.png" />
     <Content Include="Imagenes\bebida2.png" />
     <Content Include="Imagenes\btn-reserva.png" />
     <Content Include="Imagenes\exit.png" />

@@ -13,11 +13,18 @@ namespace ProyectoFinalDW
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //if(Session["usuario"].ToString() == "")
+            //try
             //{
-            //    Response.Redirect("frmLogin.aspx");
+            //    if (Session["usuario"].ToString() == "")
+            //    {
+            //        Response.Redirect("Login.aspx");
+            //    }
             //}
-            
+            //catch
+            //{
+            //    Response.Redirect("Login.aspx");
+            //}
+
         }
 
         protected void btnGuardar_Click(object sender, EventArgs e)
@@ -42,17 +49,46 @@ namespace ProyectoFinalDW
                 if (objHotel.insertarUsuario(objUsuario))
                 {
                     dvCorrecto.Visible = true;
+                    dvError.Visible = false;
                 }
                 else
                 {
+                    dvCorrecto.Visible = false;
                     dvError.Visible = true;
                     lblError.Text = objHotel.strMensaje;
                 }
             }
             else
             {
-                txtNombreUsuario.ToolTip = "error";
+                if(txtNombreUsuario.Text == "")
+                {
+                    lblError1.Visible = true;
+                }
+                if (TxtPass.Text == "")
+                {
+                    lblError2.Visible = true;
+                }
+                if (txtNombre.Text == "")
+                {
+                    lblError3.Visible = true;
+                }
+                if (txtApellidos.Text == "")
+                {
+                    lblError4.Visible = true;
+                }
+                if (txtId.Text == "")
+                {
+                    lblError5.Visible = true;
+                }
+                dvCorrecto.Visible = false;
+                dvError.Visible = true;
+                lblError.Text = "Debe ingresar los campos obligatorios!";
             }
+        }
+
+        protected void btnBack_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("frmMenuPrincipal.aspx");
         }
     }
 }
