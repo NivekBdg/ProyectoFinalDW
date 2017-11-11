@@ -32,18 +32,18 @@ namespace ProyectoFinalDW
 
             if (txtNombreBebida.Text != "" && txtMarca.Text != "" && TxtPrecio.Text != "" && txtFechaCaducidad.Text != "")
             {
-                objNuevoUsuario objUsuario = new objNuevoUsuario()
+                objNuevaBebida objBebidas = new objNuevaBebida()
                 {
-                    strUser = txtNombreBebida.Text,
-                    strTelefono = txtMarca.Text,
-                    strPass = TxtPrecio.Text,
-                    strDireccion = txtFechaCaducidad.Text,
+                    strBebida = txtNombreBebida.Text,
+                    strMarca = txtMarca.Text,
+                    strPrecio = TxtPrecio.Text,
+                    strFecha = txtFechaCaducidad.Text,
                     int64Dni = Convert.ToInt64(txtFechaCaducidad.Text),
                 };
 
                 ctrlHotel objHotel = new ctrlHotel();
 
-                if (objHotel.insertarUsuario(objUsuario))
+                if (objHotel.insertarBebida(objBebidas))
                 {
                     dvCorrecto.Visible = true;
                     dvError.Visible = false;
