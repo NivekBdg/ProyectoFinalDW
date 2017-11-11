@@ -16,10 +16,10 @@ namespace ProyectoFinalDW.code_data.objetos
 
         public objBebida(string strBebida, string strMarca, tring strPrecio, tring strFecha)
         {
-            this.strUser = strBebida;
-            this.strPass = strMarca;
-            this.strPass = strPrecio;
-            this.strPass = strFecha;
+            this.strBebida = strBebida;
+            this.strMarca = strMarca;
+            this.strPrecio = strPrecio;
+            this.strFecha = strFecha;
         }
 
     }
