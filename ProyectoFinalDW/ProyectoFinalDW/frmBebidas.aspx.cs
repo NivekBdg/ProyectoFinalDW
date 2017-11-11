@@ -32,7 +32,7 @@ namespace ProyectoFinalDW
 
             if (txtNombreBebida.Text != "" && txtMarca.Text != "" && TxtPrecio.Text != "" && txtFechaCaducidad.Text != "")
             {
-                objNuevaBebida objBebidas = new objNuevaBebida()
+                objNuevaBedida objBebidas = new objNuevaBebida()
                 {
                     strBebida = txtNombreBebida.Text,
                     strMarca = txtMarca.Text,
