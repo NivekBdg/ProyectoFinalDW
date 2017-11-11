@@ -114,8 +114,10 @@
     <Compile Include="code_data\controller\clsConexion.cs" />
     <Compile Include="code_data\controller\ctrlHotel.cs" />
     <Compile Include="code_data\dao\daoHotel.cs" />
+    <Compile Include="code_data\objetos\objHotel.cs" />
     <Compile Include="code_data\objetos\objNuevoUsuario.cs" />
     <Compile Include="code_data\objetos\objUsuario.cs" />
+    <Compile Include="code_data\objetos\objUsuarioRol.cs" />
     <Compile Include="frmAdminUsuarios.aspx.cs">
       <DependentUpon>frmAdminUsuarios.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
